@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="css/ticket.css">
+</head>
+<body>
+    <header>
+        <section class="top-bar">
+
+            <div class="left-content">
+                <h2 class="title">Events4You</h2>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookingpage.html">Movies</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="">Plays</a></li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <div class="cart-img-box">
+                    <img src="img/cart.png" alt="" class="cart">
+                </div>
+
+                <div class="profile-img-box">
+                    <a href="login.html">
+                        <img src="img/account.webp" alt="" class="account">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="main">
+        <div class="ticket-box">
+            <div class="ticket-image">
+                <img src="img/ticket.webp" alt="ticket" srcset="">
+            </div>
+            <div class="name" id="name">Name</div>
+            <div class="ticket-details" id="ticketdetails">Your Ticket Details</div>
+            <div class="icons">
+            <div class="icons1"><box-icon type='solid' name='message-square-x' onclick="check1()"></box-icon></div>
+            <div class="icons2"><box-icon type='solid' name='folder-minus' onclick="check2()"></box-icon></div>
+        </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="javascriptfiles/ticket.js"></script>
+</body>
+</html>

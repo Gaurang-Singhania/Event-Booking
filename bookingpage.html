@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking Page</title>
+    <link rel="stylesheet" href="css/bookingpage.css">
+    
+</head>
+
+<body>
+    <div class="main">   
+        <div class="side-bar">
+            <form action="">
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Languages</h3>
+                <input type="checkbox" id="english">
+                <label for="english">English</label><br>
+                <input type="checkbox" id="hindi">
+                <label for="hindi">Hindi</label><br>
+                <input type="checkbox" id="tamil">
+                <label for="tamil">Tamil</label><br>
+            </div>
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Time</h3>
+                <input type="radio" id="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+                <input type="radio" id="evening">
+                <label for="evening">Evening</label><br>
+                <input type="radio" id="night">
+                <label for="night">Night</label><br>
+            </div>
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Prices</h3>
+                <input type="checkbox" id="200">
+                <label for="adventure">200</label><br>
+                <input type="checkbox" id="250">
+                <label for="comedy">250</label><br>
+                <input type="checkbox" id="300">
+                <label for="comedy">300</label><br>
+                <input type="checkbox" id="350">
+                <label for="comedy">350</label><br>
+            </div>
+            <div class="sidebar-groups">
+                <button type="button">Apply Filters</button>
+            </div>
+        </form>
+    </div>
+    <div class="center">
+        <div class="tickets">
+            <div class="ticket-selector">
+                <div class="head">
+                    <div class="title">Pick A Movie</div>
+                    <select id="movie">
+                        <option value="200" name="OPPENHEIMER">OPPENHEIMER(RS.200)</option>
+                        <option value="250" name="GADAR 2">GADAR 2(RS.250)</option>
+                        <option value="300" name="SPIDER-MAN">SPIDER-MAN(RS.300)</option>
+                        <option value="350" name="JAWAN">JAWAN(RS.350)</option>
+                    </select>
+                </div>
+                <div class="seats">
+                    <div class="status">
+                        <div class="item">Available</div>
+                        <div class="item">Booked</div>
+                        <div class="item">Selected</div>
+                    </div>
+                    <div class="all-seats" id="wtf">
+                        <input type="checkbox" name="tickets1" id="s1">
+                        <label for="s1" class="seat booked"></label>
+                        <input type="checkbox" name="tickets2" id="s2">
+                        <label for="s2" class="seat"></label>
+                        <input type="checkbox" name="tickets3" id="s3">
+                        <label for="s3" class="seat"></label>
+                        <input type="checkbox" name="tickets4" id="s4">
+                        <label for="s4" class="seat booked"></label>
+                        <input type="checkbox" name="tickets5" id="s5">
+                        <label for="s5" class="seat"></label>
+                        <input type="checkbox" name="tickets6" id="s6">
+                        <label for="s6" class="seat booked"></label>
+                        <input type="checkbox" name="tickets7" id="s7">
+                        <label for="s7" class="seat"></label>
+                        <input type="checkbox" name="tickets8" id="s8">
+                        <label for="s8" class="seat"></label>
+                        <input type="checkbox" name="tickets9" id="s9">
+                        <label for="s9" class="seat"></label>
+                        <input type="checkbox" name="tickets10" id="s10">
+                        <label for="s10" class="seat"></label>
+                        <input type="checkbox" name="tickets11" id="s11">
+                        <label for="s11" class="seat"></label>
+                        <input type="checkbox" name="tickets12" id="s12">
+                        <label for="s12" class="seat booked"></label>
+                        <input type="checkbox" name="tickets13" id="s13">
+                        <label for="s13" class="seat"></label>
+                        <input type="checkbox" name="tickets14" id="s14">
+                        <label for="s14" class="seat"></label>
+                        <input type="checkbox" name="tickets15" id="s15">
+                        <label for="s15" class="seat booked"></label>
+
+                    </div>
+                </div>
+                <div class="timings">
+                    <div class="dates">
+                        <input type="radio" name="date1" id="d1">
+                        <label for="d1" class="dates-item">
+                            <div class="day">Sunday</div>
+                            <div class="date">21st</div>
+                        </label>
+                        <input type="radio" name="date2" id="d2">
+                        <label for="d2" class="dates-item">
+                            <div class="day">Monday</div>
+                            <div class="date">22nd</div>
+                        </label>
+                        <input type="radio" name="date3" id="d3">
+                        <label for="d3" class="dates-item">
+                            <div class="day">Tuesday</div>
+                            <div class="date">23rd</div>
+                        </label>
+                        <input type="radio" name="date4" id="d4">
+                        <label for="d4" class="dates-item">
+                            <div class="day">Wednesday</div>
+                            <div class="date">24th</div>
+                        </label>
+                        <input type="radio" name="date5" id="d5">
+                        <label for="d5" class="dates-item">
+                            <div class="day">Thursday</div>
+                            <div class="date">25th</div>
+                        </label>
+                        <input type="radio" name="date6" id="d6">
+                        <label for="d6" class="dates-item">
+                            <div class="day">Friday</div>
+                            <div class="date">26th</div>
+                        </label>
+                        <input type="radio" name="date7" id="d7">
+                        <label for="d7" class="dates-item">
+                            <div class="day">Saturday</div>
+                            <div class="date">27th</div>
+                        </label>
+                    </div>
+                    <div class="times">
+                        <input type="radio" name="time1" id="t1">
+                        <label for="t1" class="time">10:00 am</label>
+                        <input type="radio" name="time2" id="t2">
+                        <label for="t2" class="time">2:00 pm</label>
+                        <input type="radio" name="time3" id="t3">
+                        <label for="t3" class="time">6:00 pm</label>
+                        <input type="radio" name="time4" id="t4">
+                        <label for="t4" class="time">10:00 pm</label>
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="total">
+                    <span>
+                        <span class="count">0</span> Tickets
+                    </span>
+                    <div class="amount">0</div>
+                </div>
+                <button type="button" id="book">Book Tickets</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="javascriptfiles/bookingpage.js"></script>
+</body>
+
+</html>
