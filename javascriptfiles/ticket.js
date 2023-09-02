@@ -7,25 +7,26 @@ var data3 = JSON.parse(usercount);
 var useramount = localStorage.getItem('useramount');
 var data4 = JSON.parse(useramount);
 
-/*var moviename = localStorage.getItem('moviename');
-var data5 = JSON.parse(moviename);
-*/
+var moviename = localStorage.getItem('selectedMovieName');
+
+
 
 console.log(data1);
 console.log(data2);
 console.log(data3);
 console.log(data4);
-
+console.log(moviename);
 
 
 document.getElementById('name').innerHTML = "Welcome User <br>" + data1.email;
-document.getElementById('ticketdetails').innerHTML = "Your Ticket Details Are:<br> " + "No. of Tickets: " + data3.Count + "<br>" + "Total Amount Paid: " + data4.Amount;
+document.getElementById('ticketdetails').innerHTML = "Your Ticket Details Are:<br> "+ "Movie Name: " + moviename+ "<br>" + "No. of Tickets: " + data3.Count + "<br>" + "Total Amount Paid: " + data4.Amount;
 
 
 function check1(){
     alert("Tickets Haave Been Cancelled!!")
     localStorage.removeItem('usercount');
     localStorage.removeItem('useramount');
+    localStorage.removeItem('selectedMovieName');
     document.getElementById('ticketdetails').innerHTML="No Tickets Booked!!"
 }
 
@@ -33,6 +34,7 @@ function check2(){
     alert("Tickets Have Been Cancelled And You Have Been Logged out!!")
     localStorage.removeItem('usercount');
     localStorage.removeItem('useramount');
+    localStorage.removeItem('selectedMovieName');
     document.getElementById('name').innerHTML="Please Login First!!"
     document.getElementById('ticketdetails').innerHTML="No Tickets Booked!!"
 }

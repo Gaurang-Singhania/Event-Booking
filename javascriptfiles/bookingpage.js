@@ -14,6 +14,16 @@ ticket.addEventListener("change", function () {
     document.querySelector(".count").innerHTML = count;
 });
 
+
+
+const movieDropdown = document.getElementById('movie');
+
+movieDropdown.addEventListener('change', function () {
+        const selectedOptionName = movieDropdown.options[movieDropdown.selectedIndex].getAttribute('name');
+        localStorage.setItem('selectedMovieName', selectedOptionName);
+    });
+
+
 document.getElementById("book").onclick = function () {
 
     if (document.querySelector(".amount").innerHTML != 0) {
@@ -37,12 +47,17 @@ document.getElementById("book").onclick = function () {
         localStorage.setItem('usercount', j);
 
         location.href = "ticket.html";
+
+
+        
+
     }
     else {
         alert("Please Select Your Tickets First!")
     }
 
 }
+
 
 /*
 function myselection(){
