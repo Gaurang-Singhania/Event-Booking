@@ -1,4 +1,6 @@
 # Home-Page <br>
+![Home-page](https://github.com/Gaurang-Singhania/Event-Booking/assets/143371065/cc12ff18-58d8-425c-9c0e-f6ea57af4144)
+This is the main page of the website.This is where the user lands first and can navigate to all the other pages using the links in the navigation menu!
 
 
 
